@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = "<script> document.write(1) <\/script>"
+        const str2 = `<script> document.write(${str}) <\/script>`
+        const str3 = `<script> document.write(${str2}) <\/script>`
+        document.write(str)  // Можно
+        document.write(str2) // Уже нельзя
+        // Максимум можно вызвать один раз, так как необходимо экранировать закрывающийся тег script, во второй раз это уже не работает
+    </script>
+</body>
+</html>

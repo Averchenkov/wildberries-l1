@@ -1,0 +1,115 @@
+body {
+    background-color: #141414;
+    color: #e1e3e6;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",arial,Tahoma,verdana,sans-serif;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.widget-vk-posts {
+    width: 500px;
+    height: 690px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.widget-vk-posts__post {
+}
+.post {
+    background-color: #222222;
+    border-radius: 12px;
+    box-shadow:  0 0 1px #424242;
+    border: 1px solid #424242;
+    padding: 16px 20px 0;
+}
+.post__header {
+    display: flex;
+    align-items: center;
+}
+.post__avatar {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.post__header-info {
+    font-size: 13px;
+    
+    line-height: 16px;
+}
+.post__title {
+    color: #71aaeb;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.post__date {
+    color: #828282;
+    font-weight: 400;
+}
+.post__content {
+}
+.post__text {
+    line-height: 1.462;
+    margin: 0;
+    padding-top: 8px;
+    overflow: hidden;
+}
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+.post__like-btn, .post__repost-btn {
+    background-color: #333333;
+    color: #939393;;
+    border-radius: 32px;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        background-color: #424242;
+    }
+}
+.post__repost-btn {
+    margin-left: 8px;
+    margin-right: auto;
+}
+.post__like-icon, .post__repost-icon {
+    color: #b2b2b2;
+    width: 24px;
+    height: 24px;
+}
+.post__like-count, .post__repost-count {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-left: 4px;
+}
+.post__views {
+    display: flex;
+    align-items: center;
+    height: 14px;
+    line-height: 15px;
+    color: #828282;
+    font-size: 13px;
+}
+.post__views-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+.post__views-count {
+}

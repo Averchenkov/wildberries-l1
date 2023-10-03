@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Фамилия</th>
+                    <th>Имя</th>
+                    <th>Номер телефона</th>
+                    <th>Адрес</th>
+                    <th>Город</th>
+                    <th>Штат</th>
+                    <th>Индекс</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <template id="table-row">
+                <tr>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+
+                </tr>
+            </template>
+        </table>
+
+        <div class="container-pagination">
+            <nav class="pagination">
+                <button class="pagination__button pagination__button_pointer pagination__prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8899a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M15 18l-6-6 6-6"></path></svg>                </button>
+                <div class="pagination__counter-container">
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                    <button class="pagination__button"></button>
+                </div>
+                <button class="pagination__button pagination__button_pointer pagination__next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M9 18l6-6-6-6"></path></svg>
+                </button>
+            </nav>
+        </div>
+    </main>
+</body>
+</html>

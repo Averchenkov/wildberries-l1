@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 350px;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 auto;
+        }
+        input {
+            width: 100%;
+            border: 1px solid black;
+            padding: 3px 5px;
+            height: 35px;
+        }
+        ul {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid black;
+            border-top: none;
+            padding: 3px 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <input id="address" type="text">
+    <ul id="suggestions">
+    </ul>
+    </div>
+</body>
+</html>
